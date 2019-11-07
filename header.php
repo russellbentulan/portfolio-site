@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  
+  <script src="https://kit.fontawesome.com/ff995803cc.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -15,7 +17,7 @@
 <body <?php body_class(); ?>>
  <a href="#maincontent" class="skiplink">Go to Main Content</a>
 <header>
-  <div class="main-nav">
+  <!-- <div class="main-nav">
     <div class="wrapper flex">
       <button class="menu-button">
         <span></span>
@@ -28,7 +30,7 @@
         'container_class' => 'menu'
       )); ?>
     </div>
-  </div> 
+  </div>  -->
 </header>
 
 <main id="maincontent">

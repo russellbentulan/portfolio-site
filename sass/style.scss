@@ -5,9 +5,14 @@
 * Author: NAME
 */
 
-@import 'normalize';
-@import 'variables';
-@import 'base';
-@import 'navigation';
-@import 'comments'; 
-@import 'home'; 
+@import 'abstracts/variables';
+
+@import 'base/normalize',
+        'base/base';
+
+@import 'components/comments';
+
+@import 'layout/navigation',
+        'layout/social-links';
+
+@import 'pages/home';

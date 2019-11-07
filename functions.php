@@ -21,7 +21,11 @@ function theme_setup() {
 	/* This theme uses wp_nav_menu() in one location.
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
-	
+	register_nav_menus( array(
+		'primary' => 'Primary Navigation',
+		'footer'=> 'Footer Navigation',
+		'social' => 'Social Menu'
+	) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
