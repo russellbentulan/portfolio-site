@@ -19,10 +19,20 @@
 }
 .menu > ul {
   display: flex;
+  list-style: none;
 }
 .main-nav {
   .wrapper {
     justify-content: space-between;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: -99999px;
+  }
+
+  &__checkbox:checked ~ .menu {
+    left: 0;
   }
 }
 
@@ -30,13 +40,10 @@
   top: 32px;
 }
 
-.sub-menu{
-  display: none;
-  position: absolute;
-  li a{
-    
-  }
-}
+// .sub-menu{
+//   display: none;
+//   position: absolute;
+// }
 
 .menu li:hover, .menu li.active{
   .sub-menu{
@@ -113,15 +120,46 @@
 }
 
 @media (max-width: $xl){
-  .menu{
-    display: none;
-  }
-
   .main-nav .menu>ul{
+    padding: 4rem 8rem;
+    position: absolute;
+    right: -100%;
 		flex-direction: column;
-	}
+    transition: .4s all;
+    background-color: $color-accent;
+  }
+  
+  .main-nav .menu li {
+    text-align: center;
+    margin-right: 6rem;
+    background-color: white;
+
+    &:not(:last-child) {
+      margin-bottom: $grid-gutter;
+    }
+
+    & a {
+      display: inline-block;
+      padding: 1.8rem 4rem;
+    }
+  }
 
   .menu-button{
     display: block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 2000;
+  }
+
+  .main-nav__checkbox:checked {
+
+    & ~ .menu > ul {
+      right: 0;
+    }
+  }
+
+  .main-header {
+    height: 4rem;
   }
 }

@@ -1,6 +1,19 @@
+//COLOR
+$color-primary: red;
+$color-text: black;
+$color-accent: steelblue;
+
+
 // Mobile Breakpoints
 $xl: 1200px;
 $lg: 980px;
 $md: 768px;
 $sm: 600px;
 $xs: 450px;
+
+// LAYOUT
+$gutter-vertical: 4rem;
+$base-font-size: 62.5%;
+
+// GRID
+$grid-gutter: 2.5rem;
