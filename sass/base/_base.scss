@@ -55,18 +55,11 @@ td {
   vertical-align: top;
 }
 
-sub a,
-sup a {
-  font-size: inherit;
-}
-
 hr {
   margin: 30px 0;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -94,15 +87,6 @@ ul,
 p {
   margin: 0px;
   padding: 0px;
-}
-
-p,
-li,
-a,
-ul,
-ol,
-table {
-  font-size: 2rem;
 }
 
 img {

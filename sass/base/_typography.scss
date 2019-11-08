@@ -1,0 +1,31 @@
+%header-style {
+    font-family: 'Chewy', sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+sub a,
+sup a {
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    @extend %header-style;
+}
+
+p,
+li,
+a,
+ul,
+ol,
+table {
+  font-size: 2rem;
+}
