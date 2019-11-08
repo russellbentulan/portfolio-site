@@ -30,10 +30,16 @@
           <span></span>
           <span></span>
           <span></span>
-          <span class="visuallyhidden">Menu</span>
+          <span class="visually-hidden">Menu</span>
         </span>
 
       </label>
+      <!-- <button class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="visually-hidden">Menu</span>
+      </button> -->
 
       <?php wp_nav_menu( array(
         'theme_location' => 'primary',
