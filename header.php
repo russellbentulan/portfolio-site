@@ -6,7 +6,7 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   
-  <link href="https://fonts.googleapis.com/css?family=Chewy|Lato:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Open+Sans:400,400i,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -20,27 +20,17 @@
  
 <header class="main-header">
 
+  <a href="<?php get_home_url(); ?>" class="site-logo--home">Russell Bentulan</a>
+
   <section class="main-nav">
 
     <div class="wrapper flex">
 
-      <input type="checkbox" id="nav-toggle" class="main-nav__checkbox">
-
-      <label for="nav-toggle" class="main-nav__label">
-
-        <span class="menu-button">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="visually-hidden">Menu</span>
-        </span>
-
-      </label>
-
       <?php wp_nav_menu( array(
         'theme_location' => 'primary',
-        'container_class' => 'menu',
-        'container' => 'nav'
+        'container_class' => 'main-nav__nav',
+        'container' => 'nav',
+        'menu_class' => 'main-nav__list'
       )); ?>
       
     </div>

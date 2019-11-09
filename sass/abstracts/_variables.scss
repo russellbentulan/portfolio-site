@@ -1,8 +1,22 @@
-//COLOR
-$color-primary: red;
-$color-text: black;
-$color-accent: steelblue;
 
+// 0 purple-accent: #5F66B0
+// 5 purple-primary: #5662B7
+// 10 purple-highlight: #4B5eBe
+// 20 blue-accent: #396bcc
+// 30 blue-primary: #2D9ED7
+// 40 blue-highlight: #25DEC5
+// 50 green-highlight: #21E067
+
+//COLOR
+$purple-acent: #5F66B0;
+$purple-primary: #5662B7;
+$purple-highlight: #4B5eBe;
+
+$blue-accent: #396bcc;
+$blue-primary: #2D9ED7;
+$blue-highlight: #25DEC5;
+
+$green-highlight: #21E067;
 
 // Mobile Breakpoints
 $xl: 1200px;

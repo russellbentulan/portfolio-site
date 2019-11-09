@@ -1,10 +1,9 @@
 %header-style {
-    font-family: 'Chewy', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Oleo Script', sans-serif;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
 }
 
@@ -28,4 +27,10 @@ ul,
 ol,
 table {
   font-size: 2rem;
+}
+
+.main-nav {
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
 }
