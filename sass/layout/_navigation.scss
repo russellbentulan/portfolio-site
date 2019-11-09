@@ -20,7 +20,7 @@
 }
 
 .main-nav {
-  background-color: $blue-accent;
+  background-color: $blue-primary;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -43,13 +43,19 @@
   &__item {
     flex: 1 0 percentage(1/3);
     text-align: center;
-    border-top: 1.2rem solid $blue-accent;
+    border-top: 1.2rem solid $blue-primary;
+    
     &.current_page_item {
       border-top: 1.2rem solid $blue-highlight;
+
+      & a {
+        pointer-events: none;
+        cursor: default;
+      }
     }
 
     &:not(.current_page_item):hover {
-      border-top: 1.2rem solid $green-highlight;
+      border-top: 1.2rem solid $blue-accent;
     }
   }
 

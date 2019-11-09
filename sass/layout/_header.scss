@@ -1,0 +1,26 @@
+.site-banner {
+    display: flex;
+    align-items: center;
+    padding: $gutter-vertical 0;
+
+    & > *:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+.site-logo {
+    @extend %heading-style;
+    font-size: 2.4rem;
+    letter-spacing: -.5px;
+    display: inline-block;
+
+    &__block {
+        display: block;
+        line-height: .8;
+    }
+}
+
+.tagline {
+    display: inline-block;
+    font-size: 1.4rem;
+}

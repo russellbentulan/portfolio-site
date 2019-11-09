@@ -18,25 +18,37 @@
 
  <a href="#maincontent" class="skiplink">Go to Main Content</a>
  
-<header class="main-header">
+<header>
 
-  <a href="<?php get_home_url(); ?>" class="site-logo--home">Russell Bentulan</a>
+  <div class="site-banner wrapper">
+
+    <!-- Site logo -->
+    <a href="<?php echo get_home_url(); ?>" class="site-logo">
+      <span class="site-logo__block">Russell </span>
+      <span class="site-logo__block">Bentulan</span>
+    </a>
+
+    <p class="tagline">Front end developer, human being.</p>
+    
+  </div>
 
   <section class="main-nav">
-
     <div class="wrapper flex">
 
-      <?php wp_nav_menu( array(
-        'theme_location' => 'primary',
-        'container_class' => 'main-nav__nav',
-        'container' => 'nav',
-        'menu_class' => 'main-nav__list'
-      )); ?>
-      
+        <?php 
+        // strip out wp nav div and add a nav with the role 'navigation'
+        wp_nav_menu( array(
+          'theme_location' => 'primary',
+          'container' => 'nav',
+          'container_class' => 'main-nav__nav',
+          'menu_class' => 'main-nav__list'
+        )); 
+        ?>
+
     </div>
-
+    <!-- .wrapper .flex -->
   </section> 
-
+  <!-- .main-nav -->
 </header>
 
 <main id="maincontent">
