@@ -28,7 +28,7 @@
       <span class="site-logo__block">Bentulan</span>
     </a>
 
-    <p class="tagline">Front end developer, human being.</p>
+    <p class="tagline">Front end developer living in Toronto, ON.</p>
     
   </div>
 
